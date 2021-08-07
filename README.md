@@ -7,4 +7,7 @@
        1. ./gradlew build
        2.  cd build/libs
        3. java -jar hello-spring-0.0.1-SNAPSHOT.jar
-
+  + Ch02. SPRING 웹 개발 기초
+    1. 정적 컨텐츠(hello-static.html)
+    2. MVC와 템플릿 엔진(hello-spring)
+    3. API(JSON)
