@@ -11,3 +11,6 @@
     1. 정적 컨텐츠(hello-static.html)
     2. MVC와 템플릿 엔진(hello-spring)
     3. API(JSON)
+  + Ch03. 회원관리 서비스 개발
+    1. 회원도메인과 Repository 만들기
+    2. 회원 Repository 테스트(@Test, AssertThat) 케이스 작성
