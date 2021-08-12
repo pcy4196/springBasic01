@@ -9,15 +9,15 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;
 
-class MemberserviceTest {
+class MemberServiceTest {
 
-    Memberservice memberservice;
+    MemberService memberService;
     MemoryMemberRepository memberRepository;
 
     @BeforeEach
     public void beforeEach() {
         memberRepository = new MemoryMemberRepository();
-        memberservice = new Memberservice(memberRepository);
+        memberService = new MemberService(memberRepository);
     }
 
     @AfterEach
@@ -33,10 +33,10 @@ class MemberserviceTest {
         member.setName("hello");
 
         // when
-        Long saveId = memberservice.join(member);
+        Long saveId = memberService.join(member);
 
         // then
-        Member findMember = memberservice.findOne(saveId).get();
+        Member findMember = memberService.findOne(saveId).get();
         assertEquals(member.getName(), findMember.getName());
     }
 
@@ -50,14 +50,14 @@ class MemberserviceTest {
         member2.setName("spring");
 
         // when
-        memberservice.join(member1);
+        memberService.join(member1);
 //        try {
 //            memberservice.join(member2);
 //            fail();
 //        } catch (IllegalStateException e) {
 //            assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
 //        }
-        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberservice.join(member2));
+        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
 
         // then
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");

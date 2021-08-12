@@ -3,16 +3,19 @@ package basic.springBasic1st.service;
 import basic.springBasic1st.domain.Member;
 import basic.springBasic1st.repository.MemberRepository;
 import basic.springBasic1st.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-public class Memberservice {
+//@Service
+public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    // DI의 직접구현
-    public Memberservice(MemberRepository memberRepository) {
+    @Autowired
+    public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
 

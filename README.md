@@ -16,3 +16,6 @@
     2. 회원 Repository 테스트(@Test, AssertThat) 케이스 작성
     3. 회원 Service 작성
     4. 회원 Service Test 케이스 작성
+  + Ch04. 스프링 빈과 의존관계
+    1. 컴포넌트 스캔과 자동 의존관계 @Component
+    2. 자바코드로 직접 스프링 빈등 @Configuration
