@@ -15,3 +15,4 @@
     1. 회원도메인과 Repository 만들기
     2. 회원 Repository 테스트(@Test, AssertThat) 케이스 작성
     3. 회원 Service 작성
+    4. 회원 Service Test 케이스 작성

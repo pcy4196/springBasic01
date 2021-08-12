@@ -9,7 +9,12 @@ import java.util.Optional;
 
 public class Memberservice {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    // DI의 직접구현
+    public Memberservice(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     /*
      * 회원 가입
