@@ -21,3 +21,7 @@
     2. 자바코드로 직접 스프링 빈등 @Configuration
   + Ch05. 회원관리 예제
     1. 간단한 회원 웹MVC 구현(memmory 방식)
+  + Ch06. 스프링DB
+    1. H2 DB 설정
+    2. 순수 JDBC(jdbcMemberRepository.java)
+    3. 스프링 통합테스트(MemberServiceIntegrationTest)
