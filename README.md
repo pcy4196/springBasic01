@@ -25,4 +25,4 @@
     1. H2 DB 설정
     2. 순수 JDBC(jdbcMemberRepository.java)
     3. 스프링 통합테스트(MemberServiceIntegrationTest)
-    4. JPA(JpaMemberRepository)
+    4. JPA(JpaMemberRepository) 
