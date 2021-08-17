@@ -1,24 +1,33 @@
 package basic.springBasic1st;
 
+import basic.springBasic1st.repository.JdbcTemplateMemberRepository;
+import basic.springBasic1st.repository.JpaMemberRepository;
 import basic.springBasic1st.repository.MemberRepository;
-import basic.springBasic1st.repository.MemoryMemberRepository;
-import basic.springBasic1st.repository.jdbcMemberRepository;
 import basic.springBasic1st.service.MemberService;
+import org.hibernate.persister.walking.spi.EntityIdentifierDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 
 @Configuration
 public class springConfing {
 
-    private DataSource dataSource;
+//    private DataSource dataSource;
+    // JPA를 사용하기 위한 설정
+    private EntityManager em;
 
     @Autowired
-    public springConfing(DataSource dataSource) {
-        this.dataSource = dataSource;
+    public springConfing(EntityManager em) {
+        this.em = em;
     }
+
+//    @Autowired
+//    public springConfing(DataSource dataSource) {
+//        this.dataSource = dataSource;
+//    }
 
     @Bean
     public MemberService memberService() {
@@ -28,6 +37,8 @@ public class springConfing {
     @Bean
     public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
-        return new jdbcMemberRepository(dataSource);
+//        return new jdbcMemberRepository(dataSource);
+//        return new JdbcTemplateMemberRepository(dataSource);
+        return new JpaMemberRepository(em);
     }
 }
