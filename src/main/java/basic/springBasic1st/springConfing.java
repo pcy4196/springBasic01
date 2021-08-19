@@ -17,28 +17,38 @@ public class springConfing {
 
 //    private DataSource dataSource;
     // JPA를 사용하기 위한 설정
-    private EntityManager em;
-
-    @Autowired
-    public springConfing(EntityManager em) {
-        this.em = em;
-    }
+//    private EntityManager em;
 
 //    @Autowired
+//    public springConfing(EntityManager em) {
+//        this.em = em;
+//    }
+
+    //    @Autowired
 //    public springConfing(DataSource dataSource) {
 //        this.dataSource = dataSource;
 //    }
 
-    @Bean
-    public MemberService memberService() {
-        return new MemberService(memberRepository());
-    }
-
-    @Bean
-    public MemberRepository memberRepository() {
+    //    @Bean
+//    public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
 //        return new jdbcMemberRepository(dataSource);
 //        return new JdbcTemplateMemberRepository(dataSource);
-        return new JpaMemberRepository(em);
+//        return new JpaMemberRepository(em);
+//    }
+
+    //SpringData Jpa 사용
+    private final MemberRepository memberRepository;
+
+    @Autowired
+    public springConfing(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
     }
+
+    @Bean
+    public MemberService memberService() {
+        return new MemberService(memberRepository);
+    }
+
+
 }
