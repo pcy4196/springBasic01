@@ -25,6 +25,9 @@ public class MemberController {
     @Autowired
     public MemberController(MemberService memberservice) {
         this.memberService = memberservice;
+        System.out.println("memberService : " + memberservice.getClass());
+        // WAS가 실행될때 DI 주입
+        // memberService : class basic.springBasic1st.service.MemberService$$EnhancerBySpringCGLIB$$2b07773d
     }
 
     @GetMapping("/members/new")

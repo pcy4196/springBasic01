@@ -27,3 +27,5 @@
     3. 스프링 통합테스트(MemberServiceIntegrationTest)
     4. JPA(JpaMemberRepository) 
     5. SpringData Jpa(SpringDataJpaMemberRepository)
+  + Ch07. AOP
+    1. AOP 적용(TimeTraceApp.java)

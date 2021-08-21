@@ -1,23 +1,17 @@
 package basic.springBasic1st;
 
-import basic.springBasic1st.repository.JdbcTemplateMemberRepository;
-import basic.springBasic1st.repository.JpaMemberRepository;
 import basic.springBasic1st.repository.MemberRepository;
 import basic.springBasic1st.service.MemberService;
-import org.hibernate.persister.walking.spi.EntityIdentifierDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import javax.persistence.EntityManager;
-import javax.sql.DataSource;
 
 @Configuration
 public class springConfing {
 
 //    private DataSource dataSource;
     // JPA를 사용하기 위한 설정
-//    private EntityManager em;
+//    private EntityManager em;s
 
 //    @Autowired
 //    public springConfing(EntityManager em) {
@@ -50,5 +44,8 @@ public class springConfing {
         return new MemberService(memberRepository);
     }
 
-
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 }
