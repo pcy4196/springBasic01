@@ -1,13 +1,11 @@
-package basic.springBasic1st.repository;
+package basic.springBasic01.repository;
 
-import basic.springBasic1st.domain.Member;
-import org.assertj.core.api.Assertions;
+import basic.springBasic01.domain.Member;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class MemoryMemberRepositoryTest {

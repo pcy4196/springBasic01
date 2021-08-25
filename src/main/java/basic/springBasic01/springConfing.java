@@ -1,7 +1,7 @@
-package basic.springBasic1st;
+package basic.springBasic01;
 
-import basic.springBasic1st.repository.MemberRepository;
-import basic.springBasic1st.service.MemberService;
+import basic.springBasic01.repository.MemberRepository;
+import basic.springBasic01.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

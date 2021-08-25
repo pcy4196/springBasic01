@@ -1,10 +1,8 @@
-package basic.springBasic1st.service;
+package basic.springBasic01.service;
 
-import basic.springBasic1st.domain.Member;
-import basic.springBasic1st.repository.MemberRepository;
-import basic.springBasic1st.repository.MemoryMemberRepository;
+import basic.springBasic01.domain.Member;
+import basic.springBasic01.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

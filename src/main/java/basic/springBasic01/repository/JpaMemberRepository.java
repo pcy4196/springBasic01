@@ -1,6 +1,6 @@
-package basic.springBasic1st.repository;
+package basic.springBasic01.repository;
 
-import basic.springBasic1st.domain.Member;
+import basic.springBasic01.domain.Member;
 
 import javax.persistence.EntityManager;
 import java.util.List;

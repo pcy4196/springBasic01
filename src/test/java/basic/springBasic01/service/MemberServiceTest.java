@@ -1,7 +1,7 @@
-package basic.springBasic1st.service;
+package basic.springBasic01.service;
 
-import basic.springBasic1st.domain.Member;
-import basic.springBasic1st.repository.MemoryMemberRepository;
+import basic.springBasic01.domain.Member;
+import basic.springBasic01.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

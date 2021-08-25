@@ -1,7 +1,6 @@
-package basic.springBasic1st.repository;
+package basic.springBasic01.repository;
 
-import basic.springBasic1st.domain.Member;
-import org.springframework.stereotype.Repository;
+import basic.springBasic01.domain.Member;
 
 import java.util.*;
 

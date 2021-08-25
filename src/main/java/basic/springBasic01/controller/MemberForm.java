@@ -1,4 +1,4 @@
-package basic.springBasic1st.controller;
+package basic.springBasic01.controller;
 
 public class MemberForm {
     private String name;

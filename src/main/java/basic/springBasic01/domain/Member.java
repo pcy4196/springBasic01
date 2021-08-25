@@ -1,4 +1,4 @@
-package basic.springBasic1st.domain;
+package basic.springBasic01.domain;
 
 import javax.persistence.*;
 
